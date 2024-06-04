@@ -6,7 +6,7 @@ import { useState } from "react";
 function Exam2 () {
 
     // 함수형 컴포넌트에서 상태를 사용하는 방법
-    const [name, setName] = useState("송영민");
+    const [name, setName] = useState("송영민"); // 초기값 "송영민" 설정
 
     const handleClick = () => {
         setName("영돌");
