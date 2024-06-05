@@ -4,7 +4,11 @@ import Exam1 from './exam/Exam1';
 import Exam2 from './exam/Exam2';
 import Exam3 from './exam/Exam3';
 import Exam4 from './exam/Exam4';
-import Exam5 from './exam/Exam5';
+import Exam5 from './exam/Exam5'; // export default
+import Exam6_1, {Exam6_2, Exam6_3} from './exam/Exam6'; // export default + 다른 컴포넌트 export
+import { ThemeProvider } from './contextAPI/ThemeContext';
+import ThemeToggle from './contextAPI/ThemeToggle';
+import ThemeComponent from './contextAPI/ThemeConponent';
 
 // 터미널 ctrl + shift + '`'(백틱) 로 열고
 // 터미널에서 yarn start 서버 켜기
@@ -39,7 +43,15 @@ function App() {
       {/* <Exam2 /> */}
       {/* <Exam3 /> */}
       {/* <Exam4 /> */}
-      <Exam5 />
+      {/* <Exam5 /> */}
+      {/* <Exam6_1 isLogin={true}/>
+      <Exam6_2 />
+      <Exam6_3 label="클릭해보세요~"/> */}
+
+      <ThemeProvider>
+        <ThemeToggle />
+        <ThemeComponent />
+      </ThemeProvider>
 
     </div>
 
