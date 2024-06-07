@@ -9,6 +9,7 @@ import Exam6_1, {Exam6_2, Exam6_3} from './exam/Exam6'; // export default + 다�
 import { ThemeProvider } from './contextAPI/ThemeContext';
 import ThemeToggle from './contextAPI/ThemeToggle';
 import ThemeComponent from './contextAPI/ThemeConponent';
+import TodoList from './TodoList/TodoList';
 
 // 터미널 ctrl + shift + '`'(백틱) 로 열고
 // 터미널에서 yarn start 서버 켜기
@@ -48,10 +49,12 @@ function App() {
       <Exam6_2 />
       <Exam6_3 label="클릭해보세요~"/> */}
 
-      <ThemeProvider>
+      {/* <ThemeProvider>
         <ThemeToggle />
         <ThemeComponent />
-      </ThemeProvider>
+      </ThemeProvider> */}
+
+      <TodoList />
 
     </div>
 
